@@ -1,0 +1,29 @@
+.сat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto 0 auto;
+  align-self: center;
+  max-width: 300px;
+  border: 1px solid black;
+  height: 250px;
+  img{
+    margin: 0 auto;
+    border-radius: 5px;
+    max-height: 150px;
+    max-width: 200px;
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: 490px) {
+    max-width: 90%;
+    max-height: 100%;
+    img{
+      max-width: 70%;
+      max-height: 70%;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,13 @@
+<mat-card class="сat-card">
+<img *ngIf="cats.image" [src]="cats.image.url" [alt]="cats.image.id"/>
+<img *ngIf="!cats.image" src="assets/404.jpg" [alt]="404"/>
+
+  <mat-card-content>
+    <div>
+       Cat Name:{{ cats.id }}
+    </div>
+    <div>
+      Breed:{{ cats.name }}
+    </div>
+  </mat-card-content>
+</mat-card>
